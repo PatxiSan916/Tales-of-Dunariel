@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.battleground {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://statics.vrutal.com/m/34e4/34e420f6e47d96669897a45586997a57.gif");
+  background-size: cover;
+}
+
+.battleground--character {
+  height: 300px;
+  width: 300px;
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/023/781/330/original/alexis-hernandez-character-warrior-big.gif?1580320021");
+  background-size: cover;
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+}
+
+.battleground--enemy {
+  height: 200px;
+  width: 200px;
+  background-image: url("https://www.gikz.pl/wp-content/uploads/2016/03/goblin-idle.gif");
+  background-size: cover;
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+}
+
+.hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(32, 19, 0, 0.705);
+  border-top: goldenrod solid 2px;
+  padding: 10px 0;
+}
+
+.hud--hp {
+  font-size: 24px;
+}
+
+.hud--buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.hud--buttons > button {
+  width: 15%;
+  background-color: transparent;
+  border: none;
+  color: goldenrod;
+  font-size: 24px;
+}
+
+.hud--buttons > button:hover {
+  cursor: pointer;
+  color: gold;
+  margin-bottom: -1px;
+  border-bottom: gold 1px solid;
+}
