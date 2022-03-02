@@ -9,19 +9,36 @@
   </head>
   <body>
     <section class="battleground">
-      <div class="battleground--enemy"></div>
+      <span class="battleground--bigLetters"></span>
+      <div class="battleground--enemy">
+        <span class="battleground--enemy--action"></span>
+        <span class="battleground--enemy--hpBar"></span>
+        <div class="battleground--enemy--sprite"></div>
+      </div>
       <div class="battleground--character"></div>
     </section>
     <section class="hud">
-      <div class="hud--hp">HP:100/100</div>
+      <span class="hud--hp"></span>
       <div class="hud--buttons">
-        <button type="button" onclick="" class="hud--buttons--attack">
+        <button
+          type="button"
+          onclick="turn('attack')"
+          class="hud--buttons--attack"
+        >
           Attack
         </button>
-        <button type="button" onclick="" class="hud--buttons--parry">
+        <button
+          type="button"
+          onclick="turn('parry')"
+          class="hud--buttons--parry"
+        >
           Parry
         </button>
-        <button type="button" onclick="" class="hud--buttons--magic">
+        <button
+          type="button"
+          onclick="turn('magic')"
+          class="hud--buttons--magic"
+        >
           Magic
         </button>
       </div>
